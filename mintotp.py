@@ -21,9 +21,8 @@ def totp(key, time_step=30, digits=6, digest='sha1'):
 
 
 def main():
-    args = [int(x) if x.isdigit() else x for x in sys.argv[1:]]
-    for key in sys.stdin:
-        print(totp(key.strip(), *args))
+    key = sys.argv[1]
+    print(totp(key))
 
 
 if __name__ == '__main__':
