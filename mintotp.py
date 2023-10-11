@@ -20,8 +20,9 @@ def totp(key, time_step=30, digits=6, digest='sha1'):
     return hotp(key, int(time.time() / time_step), digits, digest)
 
 
-def main():
-    key = sys.argv[1]
+def main(key=None):
+    if not key:
+        key = sys.argv[1]
     print(totp(key))
 
 
