@@ -54,7 +54,7 @@ evidence:
   - Something only the user is, e.g., biometrics.
 
 A TOTP value serves as the second factor, i.e., it proves that the user
-is in possession of a device (e.g., mobile phone) that contains a TOTP
+has a device (e.g., mobile phone) that contains a TOTP
 secret key from which the TOTP value is generated. Usually the service
 provider that provides a user's account also issues a secret key encoded
 either as a Base32 string or as a QR code. This secret key is added to
@@ -133,7 +133,7 @@ HOTP value as output.
 The `totp()` function implements the TOTP algorithm. It is a thin
 wrapper around the HOTP algorithm. The TOTP value is obtained by
 invoking the HOTP function with the secret key and the number of time
-intervals (30 second intervals by default) that have elapsed since Unix
+intervals (30-second intervals by default) that have elapsed since Unix
 epoch (1970-01-01 00:00:00 UTC).
 
 [RFC 2104-5]: https://tools.ietf.org/html/rfc4226#section-5
@@ -295,7 +295,7 @@ generate TOTP values for the purpose of logging into that account.
     QR-Code:otpauth://totp/alice:bob?secret=ZYTYYE5FOAGW5ML7LRWUL4WTZLNJAMZS
     ```
 
-    Note that the secret key in the URI is same as the secret key we
+    Note that the secret key in the URI is the same as the secret key we
     used in the previous sections.
 
  4. Now enter this command to extract the secret key from the QR code
@@ -362,7 +362,7 @@ that you want to use to generate TOTP values.
     ```
 
     Then enter a [strong passphrase] when it prompts for it. Re-enter
-    the passphase to confirm it. Then paste the following key as input:
+    the passphrase to confirm it. Then paste the following key as input:
 
     ```
     ZYTYYE5FOAGW5ML7LRWUL4WTZLNJAMZS
@@ -392,7 +392,7 @@ that you want to use to generate TOTP values.
     requires it. On Linux, of course, you need to have `xclip` installed
     to use it. On Debian, Ubuntu, etc. it can be installed with the
     `apt-get install xclip` command. To paste the value copied into the
-    clipboard by `xclip`, middle-click on mouse.
+    clipboard by `xclip`, middle-click on your mouse.
 
  4. In case you want to see the TOTP value on the terminal while it is
     also copied to the system clipboard, use one of these commands:
@@ -421,7 +421,7 @@ you want to use to generate TOTP values.
     ```
 
     Then enter a [strong passphrase] when it prompts for it. Re-enter
-    the passphase to confirm it. The encrypted QR code would be saved in
+    the passphrase to confirm it. The encrypted QR code would be saved in
     a file named `secret1.png.gpg`.
 
  2. Delete the unencrypted QR code file securely:
@@ -488,7 +488,7 @@ key must occur in its own line.
 
 ### Command Line Arguments
 
-In order to keep this tool as minimal as possible, it does not come with
+To keep this tool as minimal as possible, it does not come with
 any command line options. In fact, it does not even have the `--help`
 option. It does support a few command line arguments though. Since there
 is no help output from the tool, this section describes the command line
@@ -542,7 +542,7 @@ Here are some usage examples of these command line arguments:
 
 The behaviour of the tool is undefined if it is used in any way other
 than what is described above. For example, although surplus command line
-arguments are ignored currently, this behaviour may change in future, so
+arguments are ignored currently, this behaviour may change in the future, so
 what should happen in case of surplus arguments is left undefined in
 this document.
 
