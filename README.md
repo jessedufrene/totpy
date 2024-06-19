@@ -7,6 +7,7 @@ MinTOTP is a minimal TOTP generator written in Python.
 [![PyPI Package][PyPI SVG]][pypi]
 [![PyPI Hits][Hits SVG]][pypi]
 [![MIT License][License SVG]][L]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjessedufrene%2Ftotpy.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjessedufrene%2Ftotpy?ref=badge_shield)
 
 
 [Source SVG]: https://img.shields.io/badge/view-source-brightgreen.svg
@@ -348,6 +349,9 @@ GNU Privacy Guard (also known as GnuPG or GPG).
     If GPG is installed properly, the command above should print its
     version, license details, and cipher details.
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjessedufrene%2Ftotpy.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjessedufrene%2Ftotpy?ref=badge_large)
 
 ### Encrypt Base32 Key With GPG
 
